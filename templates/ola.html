@@ -3,27 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EU TENTEI</title>
-    <style>
-        li {
-            list-style-type: none
-        }
-        </style>
+    <title>Eu tentei !!!</title>
 </head>
-
 <body>
-    <img src = 'static/ania 8bito.png'>
-    <h1><a href='https://www.pudim.com.br'>Pudim</a></h1>
-    <i><h1>
-        Grande
-    </h1></i>
-
-    <h3>
-        medio
-    </h3>
-
-    <p><h5>
-        loi
-    </h5></p>
+    {% for i in post %}
+    <h1> {{i.titulo}} </h1>
+    <h2> {{i.texto}} </h2>
+    <h3> {{i.data_criacao}} </h3>   
+    {% endfor %} 
 </body>
 </html>
